@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilosservicios.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/BVSQzbH6/logo-png.png">
+  <title>Inicio - Nuevo Destino</title>
+</head>
+<body>
+  <header>
+    <img id="logo" src="https://i.ibb.co/rRcZ35CX/logo-nuevo-destino-penege.png" href="index.html" alt="Logo de Nuevo Destino">
+    <ul class="horizontal">
+      <li><a class='cuenta' href='index.html'>Inicio</a></li>
+      <li><a class='cuenta' href='nosotros.html'>Nosotros</a></li>
+      <li><a class='cuenta' href='flota.html'>Flota</a></li>
+      <li><a class='cuenta' href='servicios.html'>Servicios</a></li>
+      <li><a class='cuenta' href='clientes.html'>Traslados corporativos</a></li>
+      <li><a class="cuenta" href="contacto.html">Contacto</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="segundoDiv">
+      <div class="Formulario">
+          <form action="https://formsubmit.co/Nuevodestinoviajes@hotmail.com" method="POST">
+              <div>
+                  <label for="nombre"><h style="font-size:2rem;">Formulario</h>
+                  <hr style="border: none; height: 2px; background-color: black; margin: 5px 0 15px 0;">Nombre:  </label>
+                  <input type="text" id="nombre" name="Nombre" placeholder="Ingrese su nombre." required>
+              </div>
+              <div>
+                  <label for="telefono">Teléfono:</label>
+                  <input type="text" id="tel" name="Telefono" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="12" placeholder="Ingrese su numero de telefono." required/>
+              </div>
+              <div>
+                  <label for="correo">Correo:  </label>
+                  <input type="email" id="correo" name="Correo" placeholder="correo@dominio.com" required>
+              </div>
+              <h4>¿De qué tipo de organización se trata?</h4>
+              <div class="radioChecker">
+                  <label for="Opciones">Particular</label>
+                  <input type="radio" id="particular" name="Opciones" value="Particular" required>
+                  <label for="Opciones">Empresa</label>
+                  <input type="radio" id="corporacion" name="Opciones" value="Corporación">
+                  <label for="Opciones">Otro</label>
+                  <input type="radio" id="otro" name="Opciones" value="Otro">
+              </div>
+              <br>
+              <div>
+                  <label for="Mensaje" style="font-size:1.2rem;">Comentarios adicionales</label><br>
+                  <textarea rows="4" cols="30" id="correo" name="Mensaje" placeholder="Ingresa tu comentario!" style="font-family:'Lato'; padding:1dvh 0 0 1dvh;"></textarea>
+              </div>
+              <input type="submit" value="Enviar" style="font-family:'Lato'; font-style:bold; background-color:rgb(255, 255, 255);">
+              <input type="reset" value="Resetear" style="font-family:'Lato';font-style:bold; background-color:rgb(255, 255, 255)">
+          </form>
+      </div>
+<div class="contactoBoton">
+  <h1 class="agrandar" style="color:black; font-size: 1.6em; text-align: center;">
+    Si te interesó, te invitamos a saber cómo contactarnos
+  </h1>
+  <h3>
+    <a class="agrandar" id="scrollable" href="#pie" style="
+      background-color: white; 
+      color: black; 
+      padding: 10px 20px; 
+      border-radius: 2em; 
+      text-decoration: none; 
+      font-weight: bold;
+      display: inline-block;
+      text-align: center;">
+      Saber más
+    </a>
+  </h3>
+</div>
+    </div>
+    </section>
+    <footer class="footer" id="pie">
+    <div class="footer-contenedor">
+        <!-- Logo -->
+        <div class="footer-logo">
+        <img src="https://i.ibb.co/BVSQzbH6/logo-png.png" alt="Logo Nuevo Destino">
+        </div>
+         <!-- logo wso -->
+            <a href="https://wa.link/mzv5gi/" target="_blank" class="wsp-flotante">
+            <img src="https://i.ibb.co/FqB3cSHD/wsp.png" alt="wsp logo"/>
+            </a>
+        <!-- contacto -->
+        <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p><a href="https://www.instagram.com/nuevodestino.viajes/" target="_blank"><img class="instagram" src="https://i.ibb.co/4ZzjPD4N/image-1.png" alt="instagram"></a>
+        <a href="https://www.instagram.com/nuevodestino.viajes/" target="_blank">@nuevodestino.viajes</a></p>
+        <p><a href="https://wa.link/mzv5gi/" target="_blank"><img class="whatsapp" src="https://i.ibb.co/Z6P0d0px/image-2.png" alt="wsp"></a>
+        <a href="https://wa.link/mzv5gi/" target="_blank">+54 9 3413341317</a></p>
+        <p><img src="https://i.ibb.co/6c3fB32G/hola.png" alt="gmail2"  class="mail" alt="gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nuevodestinoviajes@hotmail.com" target="_blank">nuevodestinoviajes@hotmail.com</a></p>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copy">
+        <p>&copy; Copyright 2025,<br>Nuevo Destinos Viajes.<br>Todos los derechos reservados.</p>
+        <p><a href="avisolegal.html">Politica y Privacidad</a></p>
+        </div>
+    </div>
+    </footer>
+</main>
+</body>
+<script>
+function toggleRadio(radio) {
+  const wasChecked = radio.checked;
+
+  setTimeout(() => {
+    if (wasChecked) {
+      radio.checked = false;
+    }
+  }, 0);
+}
+</script>
+  <script>
+    document.getElementById("scrollable").addEventListener("click", function(e) {
+      e.preventDefault(); // Evita que recargue la página
+      window.scrollBy({
+        top: 800,  // píxeles hacia abajo
+        behavior: "smooth" // animación suave
+      });
+    });
+  </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</html>
